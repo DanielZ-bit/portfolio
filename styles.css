@@ -1,0 +1,219 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center; /* Center the cards horizontally */
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    width: calc(33% - 2em);
+    margin: 1em;
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.project-card p {
+    margin-bottom: 0;
+}
+
+.project-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; /* Adjust as needed */
+    margin-top: 10px; /* Adjust spacing from project description */
+}
+
+.project-skill {
+    padding: 5px 10px;
+    border: 1px solid red;
+    border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
+form {
+    display: grid;
+    gap: 1em;
+}
+
+form label {
+    margin-bottom: 0.5em;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.button {
+    display: inline-block;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 0.75em 1.5em; /* Adjusted padding for better appearance */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: left; /* Left-align text */
+    font-size: 1em; /* Adjust font size */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.button2 {
+    display: inline-block;
+    background-color: #cc2900; /* red background */
+    color: white; /* White text */
+    padding: 0.75em 1.5em; /* Adjusted padding for better appearance */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: left; /* Left-align text */
+    font-size: 1em; /* Adjust font size */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.button2:hover {
+    background-color: #800033; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+#about {
+    background: #f9f9f9; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    max-width: 600px; /* Maximum width */
+    margin: 20px auto; /* Center alignment */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: Arial, sans-serif; /* Clean font */
+    color: #333; /* Dark text color */
+}
+
+#about h2 {
+    text-align: center; /* Centered heading */
+    font-size: 2em; /* Larger heading */
+    margin-bottom: 0.5em; /* Space below heading */
+    color: #007acc; /* Accent color */
+}
+
+#about p {
+    line-height: 1.6; /* Improved readability */
+    margin: 10px 0; /* Space between paragraphs */
+    padding: 10px; /* Padding inside each paragraph */
+    background: #ffffff; /* Background color for each item */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners for items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow for items */
+    transition: transform 0.2s, background 0.2s; /* Smooth transition for hover effect */
+}
+
+#about p:hover {
+    background: #f0f8ff; /* Slight background color change on hover */
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+#about p a {
+    color: #007acc; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+#about p a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+#about p:last-child {
+    margin-bottom: 0; /* Remove bottom margin from last paragraph */
+}
+
+#intro {
+    background: linear-gradient(to right, #007acc, #00c6ff); /* Gradient background */
+    color: #ffffff; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 40px 20px; /* Padding around the content */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 800px; /* Maximum width for the section */
+    margin: 20px auto; /* Center alignment */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    font-family: 'Arial', sans-serif; /* Clean font */
+}
+
+#intro h1 {
+    font-size: 3em; /* Large font size for the heading */
+    margin-bottom: 0.2em; /* Space below the heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow for the heading */
+}
+
+#intro p {
+    font-size: 1.5em; /* Slightly larger font size for the paragraph */
+    line-height: 1.6; /* Improved readability */
+    margin: 0 auto; /* Center paragraph text */
+    max-width: 600px; /* Limit width for the paragraph text */
+}
